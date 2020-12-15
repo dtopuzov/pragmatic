@@ -25,7 +25,6 @@ public class CSVDataProvider {
      */
     @DataProvider(name = "csvDataProvider")
     public static Object[][] createData() throws CsvException, IOException {
-
         // Read CSV file from resources folder
         ClassLoader classLoader = CSVDataProvider.class.getClassLoader();
         InputStream resource = classLoader.getResourceAsStream("test-data.csv");
