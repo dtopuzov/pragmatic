@@ -4,6 +4,8 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.lang.reflect.Method;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 
 
 /**
@@ -37,14 +39,14 @@ public class BaseTest {
         System.out.println("End test: " + testCase);
 
         // Demo how to get test status and other properties
-        System.out.println("Test Ended: " + result.getStatus());
+        System.out.println("Test Status: " + result.getStatus());
         // int SUCCESS = 1;
         // int FAILURE = 2;
         // int SKIP = 3;
         // int SUCCESS_PERCENTAGE_FAILURE = 4;
         // int STARTED = 16;
-        System.out.println("Test Started: " + result.getStartMillis());
-        System.out.println("Test Ended: " + result.getEndMillis());
+        System.out.println("Test Started: " + convertTime(result.getStartMillis()));
+        System.out.println("Test Ended: " + convertTime(result.getEndMillis()));
     }
 
     @AfterClass(alwaysRun = true)
@@ -55,5 +57,10 @@ public class BaseTest {
     @AfterTest(alwaysRun = true)
     public void afterTest() {
         System.out.println("Executed after all classes.");
+    }
+
+    private String convertTime(long millis) {
+        DateFormat simple = new SimpleDateFormat("HH:mm:ss:SSS");
+        return simple.format(millis);
     }
 }

@@ -1,7 +1,13 @@
-# Appium Demos 
+# Appium Demos
 
-- Basics of TestNG
+- Basics of TestNG 
     - Available at `src/test/java/helloworld`
+    - Demonstrate TestNG features like
+        - Basic test attributes
+        - Test order and priority
+        - Hooks (before and after test logic)
+        - Inherit tests from base test class
+        - Data driven testing
 
 
 - Test native Android and iOS apps
@@ -14,7 +20,7 @@
 - Test web on mobile browsers
     - Available at `src/test/java/mobileweb`
     - Same notes for the configuration apply too, see the `Execution` section.
-    
+
 ## Technology Stack
 - [Maven](https://maven.apache.org/) to build the project and manage dependencies
 - [TestNG](https://testng.org/doc/) as unit testing framework
@@ -28,10 +34,11 @@ TBD.
 ### Commandline
 
 Execute hello-world tests for inheritance:
+
 ```bash
-mvn clean test -Dtest=helloworld.inheritance.*Tests
+mvn clean test -Dtest="helloworld.inheritance.*Tests"
 ```
- 
+
 ## Additional Resources
 
 - You may hit [this issue](https://stackoverflow.com/questions/57299606/testng-by-default-disables-loading-dtd-from-unsecure-urls) on older versions of IntelliJ IDEA.
