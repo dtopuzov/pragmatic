@@ -3,11 +3,15 @@ package helloworld;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class HelloWorldTest {
+public class HelloWorldTests {
 
     @Test
     public void testSimple() {
+        // Examples of assert statements.
         Assert.assertTrue(true);
+        Assert.assertEquals(1, 1);
+        Assert.assertNotEquals("pass", "fail");
+        // Assert.fail("force test to fail");
     }
 
     @Test(enabled = false)

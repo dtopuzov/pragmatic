@@ -29,3 +29,13 @@ Appium examples can be found in `appium` folder.
 Before start with them first read about [Official Docs](http://appium.io/docs/en/about-appium/intro/).
 
 For more advanced topics [this](https://appiumpro.com/) blog is very useful.
+
+Please also read the `README.md` file in each demo project inside `appium` folder.
+
+## Continuous Integration
+
+It is important to be able to run automated test as part of CI/CD so you should think about it and have in mind when take decisions.
+
+CI/CD systems are usually complex and can not be shipped as demo project that can be opened with IDE.
+
+Resources for this topic are primarily in form of markdown files.
