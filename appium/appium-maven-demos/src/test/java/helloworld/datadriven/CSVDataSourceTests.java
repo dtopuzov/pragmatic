@@ -1,4 +1,4 @@
-package tests.helloworld.datadriven;
+package helloworld.datadriven;
 
 import org.testng.annotations.Test;
 

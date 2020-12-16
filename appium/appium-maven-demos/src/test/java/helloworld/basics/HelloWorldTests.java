@@ -1,4 +1,4 @@
-package tests.helloworld.basics;
+package helloworld.basics;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

@@ -1,4 +1,4 @@
-package tests.helloworld.datadriven;
+package helloworld.datadriven;
 
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;

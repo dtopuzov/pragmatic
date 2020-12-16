@@ -11,14 +11,14 @@
 
 
 - Test native Android and iOS apps
-    - Available at `src/tests/java/tests.nativeapp`
+    - Available at `src/tests/java/nativeapp`
     - Since app under tests look the same on both platforms there is no point to implement tests twice.
     - That is the power of Appium - write tests once, run on both Android and iOS.
     - Just have in mind you should pass the configuration to the IDE when you run tests, please see the `Execution` section.
 
 
 - Test web on mobile browsers
-    - Available at `src/tests/java/tests.nativeapp.mobileweb`
+    - Available at `src/tests/java/nativeapp.mobileweb`
     - Same notes for the configuration apply too, see the `Execution` section.
 
 ## Technology Stack
@@ -36,7 +36,7 @@ TBD.
 Execute hello-world tests for inheritance:
 
 ```bash
-mvn clean tests -Dtest="tests.helloworld.inheritance.*Tests"
+mvn clean test -Dtest="tests.helloworld.inheritance.*Tests"
 ```
 
 ## Additional Resources

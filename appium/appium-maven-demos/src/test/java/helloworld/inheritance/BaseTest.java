@@ -1,4 +1,4 @@
-package tests.helloworld.inheritance;
+package helloworld.inheritance;
 
 import org.testng.ITestResult;
 import org.testng.annotations.*;

@@ -1,4 +1,4 @@
-package tests.nativeapp;
+package nativeapp.tests;
 
 import base.MobileTest;
 import org.openqa.selenium.ScreenOrientation;
