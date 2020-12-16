@@ -27,7 +27,7 @@ install_java() {
                 fi
 
                 brew tap adoptopenjdk/openjdk
-                brew cask install adoptopenjdk"$i"
+                brew install --cask adoptopenjdk"$i"
                 brew untap adoptopenjdk/openjdk
             } &>"$HOME"/logs/install-java"$i".logs
         fi

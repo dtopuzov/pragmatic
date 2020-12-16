@@ -1,0 +1,1 @@
+Add abstraction for pages of some web site.

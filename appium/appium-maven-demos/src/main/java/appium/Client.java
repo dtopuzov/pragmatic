@@ -1,5 +1,6 @@
 package appium;
 
+import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -9,7 +10,6 @@ import io.appium.java_client.remote.AutomationName;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Platform;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import settings.Settings;
 
@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class Client {
 
-    private Settings settings;
+    private final Settings settings;
     private AppiumDriver<?> driver;
 
     public Client(Settings settings) {
@@ -51,6 +51,7 @@ public class Client {
 
     private DesiredCapabilities getCapabilities() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("appium:chromeOptions", ImmutableMap.of("w3c", false));
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, settings.getPlatform());
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,
                 String.valueOf(settings.getPlatformVersion()));
