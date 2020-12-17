@@ -6,6 +6,7 @@ import nativeapp.pages.HomePage;
 import nativeapp.pages.SwipePage;
 import org.openqa.selenium.InvalidElementStateException;
 import org.openqa.selenium.ScreenOrientation;
+import org.openqa.selenium.WebDriverException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -49,7 +50,11 @@ public class SystemEventsTests extends MobileTest {
         Assert.assertTrue(swipePage.loaded());
     }
 
-    @Test(expectedExceptions = InvalidElementStateException.class)
+    @Test(expectedExceptions =
+            {
+                    InvalidElementStateException.class,
+                    WebDriverException.class
+            })
     public void rotationShouldBeDisabled() {
         driver.rotate(ScreenOrientation.LANDSCAPE);
     }

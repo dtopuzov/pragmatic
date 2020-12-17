@@ -17,13 +17,12 @@ public class MobileTest {
 
     protected static AppiumDriver<?> driver;
 
-    private static Settings settings;
     private static Client client;
     private static Server server;
 
     @BeforeTest
     public static void beforeAll() {
-        settings = new Settings();
+        Settings settings = new Settings();
         server = new Server();
         server.start();
         client = new Client(settings);
