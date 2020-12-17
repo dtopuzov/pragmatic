@@ -11,4 +11,8 @@ public class HomePage extends MobilePage {
         super(driver);
         footer = new Footer(driver);
     }
+
+    public boolean loaded() {
+        return findByText("Demo app for the appium-boilerplate") != null;
+    }
 }
