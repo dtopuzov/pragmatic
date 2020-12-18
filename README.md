@@ -2,10 +2,6 @@
 
 Resources for [Mobile Testing](https://pragmatic.bg/courses/mobile-apps-test-automation-course/) course at Pragmatic.
 
-```text
-NOTE: Work in progress!
-```
-
 ## Setup
 
 Scripts for initial setup of machines can be found in `setup` folder.
