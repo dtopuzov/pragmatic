@@ -18,7 +18,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Appium Maven Demos
-      run: mvn clean test -Dtest="helloworld.*Tests"
+      run: mvn clean test -Dtest="helloworld.*.*Tests"
       working-directory: appium/appium-maven-demos
     - name: Appium Gradle Demos
       run: ./gradlew clean test --tests "helloworld.*"
