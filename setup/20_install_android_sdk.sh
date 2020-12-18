@@ -58,7 +58,7 @@ install() {
 
       # Install new ANDROID SDKs.
       echo "Install Android SDK."
-      brew cask install android-sdk
+      brew install --cask android-sdk
     } &>$HOME/logs/install-android-sdk.log
   else
     echo "Not implemented!"

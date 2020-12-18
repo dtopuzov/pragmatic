@@ -4,6 +4,11 @@ Those are general purpose resources for Appium.
 
 For specific technologies and demos please read `README.md` of each demo.
 
+## Gestures
+
+- [Scroll / Swipe actions tutorial](http://appium.io/docs/en/writing-running-appium/tutorial/swipe-tutorial/) from docs
+- [Automating Mobile Gestures with Appium](https://www.youtube.com/watch?v=SDfxD8aGZRE&ab_channel=SauceLabs) video by SauceLabs
+
 ## Hybrid Apps and Mobile Web
 
 **Inspect Elements**
