@@ -4,9 +4,20 @@ Resources for [Mobile Testing](https://pragmatic.bg/courses/mobile-apps-test-aut
 
 ## Setup
 
-Scripts for initial setup of machines can be found in `setup` folder.
+The setup for this cource is quite complex, we need:
+- GitHub client
+- JDK 1.8 (and later)
+- IntelliJ IDEA (or other IDE of your choise)
+- Android Studio/SDK
+- NodeJS and Appium
+- [iOS] Apple hardware with macOS and Xcode
+- [optional] Sikuli IDE
+- [optional] Jenkins
 
-Please read [setup/README.md](setup/README.md) for more details.
+We cover all the steps in details during couce, but we ship some scripts in `setup` folder as well.
+Those scripts might be usefull for both local setup and automation of test infrastructure (build machines).
+
+Please read [setup/README.md](setup/README.md) for more details!
 
 ## Sikuli
 
