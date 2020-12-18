@@ -10,9 +10,9 @@ The setup for this cource is quite complex, we need:
 - IntelliJ IDEA (or other IDE of your choise)
 - Android Studio/SDK
 - NodeJS and Appium
-- [iOS] Apple hardware with macOS and Xcode
-- [optional] Sikuli IDE
-- [optional] Jenkins
+- [Optional, iOS Only] Apple hardware with macOS and Xcode
+- [Optional] Sikuli IDE
+- [Optional] Jenkins
 
 We cover all the steps in details during couce, but we ship some scripts in `setup` folder as well.
 Those scripts might be usefull for both local setup and automation of test infrastructure (build machines).
