@@ -3,6 +3,11 @@
 *.vscode
 *.iml
 
+# Gradle Files
+.gradle
+build
+out
+
 # Temp folders
 target
 
