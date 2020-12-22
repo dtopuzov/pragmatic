@@ -2,6 +2,7 @@ package mobileweb.tests;
 
 
 import base.MobileTest;
+import io.appium.java_client.remote.AutomationName;
 import mobileweb.pages.KeyPressPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -24,11 +25,16 @@ public class KeyPressesTests extends MobileTest {
         // Type value and verify result changed too
         keyPressPage.typeText("test");
         Assert.assertEquals(keyPressPage.getText(), "test");
-        Assert.assertEquals(keyPressPage.getResult(), "You entered: T");
+        String automationName = driver.getCapabilities().getCapability("automationName").toString();
+        if (!automationName.equalsIgnoreCase(AutomationName.IOS_XCUI_TEST)) {
+            Assert.assertEquals(keyPressPage.getResult(), "You entered: T");
+        }
 
         // Clean value of the input
         keyPressPage.clearText();
         Assert.assertEquals(keyPressPage.getText(), "");
-        Assert.assertEquals(keyPressPage.getResult(), "You entered: T");
+        if (!automationName.equalsIgnoreCase(AutomationName.IOS_XCUI_TEST)) {
+            Assert.assertEquals(keyPressPage.getResult(), "You entered: T");
+        }
     }
 }
