@@ -24,10 +24,10 @@ class AppiumSession(object):
         self.driver = webdriver.Remote("http://127.0.0.1:{0}/wd/hub".format(port), capabilities)
 
     def stop(self):
-        if self.appium_service is not None:
-            self.appium_service.stop()
         if self.driver is not None:
             self.driver.quit()
+        if self.appium_service is not None:
+            self.appium_service.stop()
 
     @staticmethod
     def free_port():

@@ -3,15 +3,14 @@ import pytest
 from utils.appium_session import AppiumSession
 
 
-@pytest.fixture(scope='module')
+@pytest.fixture(scope='package', autouse=True)
 def driver():
     desired_caps = {
-        'platformName': 'Android',
-        'platformVersion': '10',
-        'deviceName': 'Pixel3Api29',
-        'avdName': 'Pixel3Api29',
-        'browser': 'Chrome',
-        'chromeDriverVersion': '2.44'
+        'platformName': 'iOS',
+        'platformVersion': '12.4',
+        'deviceName': 'iPhone 8',
+        'browserName': 'Safari',
+        'automationName': 'XCUITest'
     }
 
     s = AppiumSession(desired_caps)
