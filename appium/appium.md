@@ -4,12 +4,22 @@ Those are general purpose resources for Appium.
 
 For specific technologies and demos please read `README.md` of each demo.
 
+## Tutorials
+
+- [Appium with Python by Maria Clara](https://github.com/clarabez/appium-en)
+
 ## Gestures
 
 - [Scroll / Swipe actions tutorial](http://appium.io/docs/en/writing-running-appium/tutorial/swipe-tutorial/) from docs
 - [Automating Mobile Gestures with Appium](https://www.youtube.com/watch?v=SDfxD8aGZRE&ab_channel=SauceLabs) video by SauceLabs
 
 ## Hybrid Apps and Mobile Web
+
+**Tutorials**
+
+- [Automating hybrid apps](http://appium.io/docs/en/writing-running-appium/web/hybrid/)
+- [Automating Cross-Platform Hybrid Apps](https://appiumpro.com/editions/17)
+
 
 **Inspect Elements**
 
@@ -22,11 +32,6 @@ For specific technologies and demos please read `README.md` of each demo.
 **Solve the issue with download and setup ChromeDriver**
 
 - [WebDriver Manager](https://github.com/bonigarcia/webdrivermanager)
-
-**Tutorials**
-
-- [Automating hybrid apps](http://appium.io/docs/en/writing-running-appium/web/hybrid/)
-- [Automating Cross-Platform Hybrid Apps](https://appiumpro.com/editions/17)
 - [No Chromedriver found that can automate Chrome '53.0.2785'](https://stackoverflow.com/questions/52023111/no-chromedriver-found-that-can-automate-chrome-53-0-2785)
 
 ## Image Based Testing
