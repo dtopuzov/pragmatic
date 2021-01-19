@@ -64,4 +64,4 @@ jobs:
         profile: Nexus 5
         avd-name: Nexus5Api23
         script: mvn clean test -Dtest="nativeapp.tests.*" -Dconfig="nativeapp.emulator"
-        working-directory: appium/appium-gradle-demos
+        working-directory: appium/appium-maven-demos
