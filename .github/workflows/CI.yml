@@ -14,9 +14,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
@@ -29,3 +27,24 @@ jobs:
     - name: Appium Gradle Demos
       run: ./gradlew clean test --tests "helloworld.*"
       working-directory: appium/appium-gradle-demos
+
+  appium-gradle-demos-android:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2 #checkout the code 
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Install Appium Server
+      run: npm install -g appium
+    - name: Run Appium Tests
+      uses: reactivecircus/android-emulator-runner@v1
+      with:
+        api-level: 23
+        profile: Nexus 5
+        avd-name: Nexus5Api23
+        script: ./gradlew clean test --tests "nativeapp.tests.*"
+        working-directory: appium/appium-gradle-demos
+  
+      
