@@ -39,7 +39,7 @@ jobs:
     - name: Install Appium Server
       run: npm install -g appium
     - name: Run Appium Tests
-      uses: reactivecircus/android-emulator-runner@v1
+      uses: reactivecircus/android-emulator-runner@v2
       with:
         api-level: 23
         profile: Nexus 5
