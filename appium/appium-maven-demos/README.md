@@ -28,9 +28,6 @@
 
 ## Execution
 
-### IntelliJ IDEA
-TBD.
-
 ### Commandline
 
 Execute hello-world tests for inheritance:
@@ -39,7 +36,13 @@ Execute hello-world tests for inheritance:
 mvn clean test -Dtest="tests.helloworld.inheritance.*Tests"
 ```
 
-## Additional Resources
+Execute tests for native mobile app and android emulator:
+
+```bash
+ mvn clean test -Dtest="nativeapp.tests.*Tests" -Dconfig="nativeapp.emulator"
+```
+
+### IntelliJ IDEA
 
 - You may hit [this issue](https://stackoverflow.com/questions/57299606/testng-by-default-disables-loading-dtd-from-unsecure-urls) on older versions of IntelliJ IDEA.
     - The solution is to upgrade to `2020.3` release where the issue is [addressed](https://youtrack.jetbrains.com/issue/IDEA-234765).

@@ -20,7 +20,6 @@ For specific technologies and demos please read `README.md` of each demo.
 - [Automating hybrid apps](http://appium.io/docs/en/writing-running-appium/web/hybrid/)
 - [Automating Cross-Platform Hybrid Apps](https://appiumpro.com/editions/17)
 
-
 **Inspect Elements**
 
 - [Remote Debugging Android Devices](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3)

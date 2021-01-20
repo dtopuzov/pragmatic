@@ -5,7 +5,7 @@
 You can install with `npm`:
 
 ``` bash
-$ npm install -g node-gyp
+npm install -g node-gyp
 ```
 
 You will also need to install:
@@ -33,7 +33,7 @@ If you have multiple Python versions installed, you can identify which Python
 version `node-gyp` uses by setting the '--python' variable:
 
 ``` bash
-$ node-gyp --python /path/to/python2.7
+node-gyp --python /path/to/python2.7
 ```
 
 If `node-gyp` is called by way of `npm`, *and* you have multiple versions of
@@ -41,7 +41,7 @@ Python installed, then you can set `npm`'s 'python' config key to the appropriat
 value:
 
 ``` bash
-$ npm config set python /path/to/executable/python2.7
+npm config set python /path/to/executable/python2.7
 ```
 
 If `windows-build-tools` was installed, the Python 2.7 path should be `C:\Users\<user>\.windows-build-tools\python27\`.
@@ -49,12 +49,13 @@ If `windows-build-tools` was installed, the Python 2.7 path should be `C:\Users\
 Use the command below to check `npm`'s 'python' config key value:
 
 ``` bash
-$ npm config get python
+npm config get python
 ```
 
 ***
 
 ## Install CMake
+
 Download and install `x64` version from: [CMake Downloads](https://cmake.org/download)
 
 Add to `PATH` during install
@@ -70,8 +71,9 @@ Will need to execute remaining commands in new terminal for `cmake` to be recogn
 Verify that git is installed by using `git --version`; install if necessary.
 
 If you do not want to set up OpenCV on your own you can simply let this package auto install OpenCV 3.4 + <a href="https://github.com/opencv/opencv_contrib"><b>OpenCV contrib 3.4</b></a> (might take some time):
+
 ``` bash
-$ npm i -g opencv4nodejs
+npm i -g opencv4nodejs
 ```
 
 I've gotten errors about Visual Studio on a clean install (using just the windows-build-tools; not Visual Studio), and resolved that with a restart. I had also installed [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools), but the restart might have been all that was needed.
