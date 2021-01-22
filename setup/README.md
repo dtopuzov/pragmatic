@@ -16,6 +16,10 @@ macOS:
 
 - Manually download and install latest official [Xcode](https://developer.apple.com/xcode/).
 
+Note:
+
+- Xcode installation can be also scripted with [xcinfo](https://github.com/xcodereleases/xcinfo).
+
 ## Scripts
 
 Each script describes what it does in its first lines.
