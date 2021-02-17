@@ -8,8 +8,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.extension.ExtensionContext;
 
 import java.lang.reflect.Method;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 
 
 /**
@@ -51,11 +49,6 @@ public class BaseTest {
     @AfterAll
     public static void afterClass() {
         System.out.println("Executed after each class.");
-    }
-
-    private String convertTime(long millis) {
-        DateFormat simple = new SimpleDateFormat("HH:mm:ss:SSS");
-        return simple.format(millis);
     }
 
     private void collectArtifacts(String testMethodName) {

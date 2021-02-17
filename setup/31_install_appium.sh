@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ##############################################################
-# Install NodeJS 14 LTS.
+# Install Appium.
 #
 # Platform: macOS and Linux.
 #

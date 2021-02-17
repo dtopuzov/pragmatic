@@ -24,19 +24,13 @@ Sample web and mobile tests in Python.
 ### Web Tests
 
 ```bash
-pipenv run pytest tests\desktop_web -s -n <number-of-parallel-threads> --dist=loadscope
-```
-
-### Mobile App
-
-```bash
-pipenv run pytest tests\mobile_app --dist=loadscope
+pipenv run pytest tests/desktop_web -s -n <number-of-parallel-threads> --dist=loadscope
 ```
 
 ### Mobile Web
 
 ```bash
-pipenv run pytest tests\mobile_web --dist=loadscope
+pipenv run pytest tests/mobile_web
 ```
 
 ## Resource
