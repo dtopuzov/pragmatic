@@ -54,6 +54,7 @@ public class Client {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,
                 String.valueOf(settings.getPlatformVersion()));
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, settings.getDeviceName());
+        capabilities.setCapability(MobileCapabilityType.NO_RESET, true);
 
         // Set application under test
         if (settings.getAppPath() != null) {

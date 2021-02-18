@@ -3,7 +3,6 @@ package nativeapp.pages;
 import base.MobilePage;
 import io.appium.java_client.AppiumDriver;
 import nativeapp.components.Footer;
-import nativeapp.enums.WDIOMenuItems;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -16,23 +15,13 @@ public class WebViewPage extends MobilePage {
         footer = new Footer(driver);
     }
 
-    public void openTab(WDIOMenuItems tab) {
+    public void searchIsVisible() {
         try {
             switchToWebContext();
-            By locator = By.xpath(String.format("//a[text()='%s']", tab.toString()));
-            wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).click();
-        } finally {
-            switchToNativeContext();
-        }
-    }
-
-    public void verityTextVisible(String text) {
-        try {
-            switchToWebContext();
-            By locator = By.xpath("//*[text()='" + text + "']");
+            By locator = By.cssSelector("button[aria-label='Search']");
             wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         } catch (Exception e) {
-            Assert.fail(String.format("Failed to find '%s' text.", text));
+            Assert.fail("Failed to find search button.");
         } finally {
             switchToNativeContext();
         }
