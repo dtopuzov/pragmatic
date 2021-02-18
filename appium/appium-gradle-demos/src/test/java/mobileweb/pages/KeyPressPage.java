@@ -25,7 +25,7 @@ public class KeyPressPage extends MobilePage {
         driver.navigate().to("https://the-internet.herokuapp.com/key_presses");
         assertAll("Popup title and message not correct!",
                 () -> assertTrue(input.isDisplayed(), "Failed to load 'key_presses' page."),
-                () -> assertTrue(result.isDisplayed(), "Failed to load 'key_presses' page.")
+                () -> assertTrue(result.isEnabled(), "Failed to load 'key_presses' page.")
         );
     }
 
