@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><AppiumAUT><XCUIElementTypeApplication type="XCUIElementTypeApplication" name="wdioDemoApp" label="wdioDemoApp" enabled="true" visible="true" x="0" y="0" width="375" height="812" index="0">
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" x="0" y="0" width="375" height="812" index="0">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="375" height="812" index="0">
+            <XCUIElementTypeOther type="XCUIElementTypeOther" name="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page Home WebView Login Forms Swipe" label="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page Home WebView Login Forms Swipe" enabled="true" visible="true" x="0" y="0" width="375" height="812" index="0">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" name="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page Home WebView Login Forms Swipe" label="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page Home WebView Login Forms Swipe" enabled="true" visible="true" x="0" y="0" width="375" height="812" index="0">
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page Home WebView Login Forms Swipe" label="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page Home WebView Login Forms Swipe" enabled="true" visible="true" x="0" y="0" width="375" height="812" index="0">
+                        <XCUIElementTypeOther type="XCUIElementTypeOther" name="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page Home WebView Login Forms Swipe" label="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page Home WebView Login Forms Swipe" enabled="true" visible="true" x="0" y="0" width="375" height="812" index="0">
+                            <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="0" width="375" height="44" index="0"/>
+                            <XCUIElementTypeOther type="XCUIElementTypeOther" name="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page Home WebView Login Forms Swipe" label="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page Home WebView Login Forms Swipe" enabled="true" visible="true" x="0" y="0" width="375" height="812" index="1">
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" name="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page" label="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page" enabled="true" visible="true" x="0" y="0" width="375" height="718" index="0">
+                                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page" label="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page" enabled="true" visible="true" x="0" y="0" width="375" height="718" index="0">
+                                        <XCUIElementTypeOther type="XCUIElementTypeOther" name="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page" label="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page" enabled="true" visible="true" x="0" y="0" width="375" height="718" index="0">
+                                            <XCUIElementTypeOther type="XCUIElementTypeOther" name="Home-screen" label="WEBDRIVER I/O Demo app for the appium-boilerplate   Support Vertical scroll bar, 1 page Horizontal scroll bar, 1 page" enabled="true" visible="true" x="0" y="44" width="375" height="674" index="0">
+                                                <XCUIElementTypeScrollView type="XCUIElementTypeScrollView" enabled="true" visible="true" x="0" y="44" width="375" height="674" index="0">
+                                                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="WEBDRIVER I/O Demo app for the appium-boilerplate   Support" label="WEBDRIVER I/O Demo app for the appium-boilerplate   Support" enabled="true" visible="true" x="0" y="44" width="375" height="571" index="0">
+                                                        <XCUIElementTypeOther type="XCUIElementTypeOther" name="WEBDRIVER I/O Demo app for the appium-boilerplate" label="WEBDRIVER I/O Demo app for the appium-boilerplate" enabled="true" visible="true" x="0" y="44" width="375" height="411" index="0">
+                                                            <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="true" x="104" y="144" width="167" height="196" index="0"/>
+                                                            <XCUIElementTypeOther type="XCUIElementTypeOther" name="WEBDRIVER I/O" label="WEBDRIVER I/O" enabled="true" visible="true" x="65" y="340" width="245" height="98" index="1">
+                                                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="WEBDRIVER" name="WEBDRIVER" label="WEBDRIVER" enabled="true" visible="true" x="65" y="360" width="202" height="49" index="0"/>
+                                                                <XCUIElementTypeOther type="XCUIElementTypeOther" name="I/O" label="I/O" enabled="true" visible="true" x="265" y="360" width="45" height="48" index="1">
+                                                                    <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="I/O" name="I/O" label="I/O" enabled="true" visible="true" x="275" y="366" width="45" height="36" index="0"/>
+                                                                </XCUIElementTypeOther>
+                                                            </XCUIElementTypeOther>
+                                                            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Demo app for the appium-boilerplate" name="Demo app for the appium-boilerplate" label="Demo app for the appium-boilerplate" enabled="true" visible="true" x="71" y="438" width="233" height="18" index="2"/>
+                                                        </XCUIElementTypeOther>
+                                                        <XCUIElementTypeOther type="XCUIElementTypeOther" name="  Support" label="  Support" enabled="true" visible="true" x="0" y="455" width="375" height="160" index="1">
+                                                            <XCUIElementTypeOther type="XCUIElementTypeOther" name="  Support" label="  Support" enabled="true" visible="true" x="97" y="455" width="181" height="160" index="0">
+                                                                <XCUIElementTypeOther type="XCUIElementTypeOther" name=" " label=" " enabled="true" visible="true" x="97" y="455" width="181" height="139" index="0">
+                                                                    <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="" name="" label="" enabled="true" visible="true" x="97" y="475" width="91" height="99" index="0"/>
+                                                                    <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="" name="" label="" enabled="true" visible="true" x="187" y="475" width="91" height="99" index="1"/>
+                                                                </XCUIElementTypeOther>
+                                                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Support" name="Support" label="Support" enabled="true" visible="true" x="97" y="593" width="181" height="23" index="1"/>
+                                                            </XCUIElementTypeOther>
+                                                        </XCUIElementTypeOther>
+                                                    </XCUIElementTypeOther>
+                                                    <XCUIElementTypeOther type="XCUIElementTypeOther" value="0%" name="Vertical scroll bar, 1 page" label="Vertical scroll bar, 1 page" enabled="true" visible="false" x="342" y="44" width="30" height="674" index="1"/>
+                                                    <XCUIElementTypeOther type="XCUIElementTypeOther" value="0%" name="Horizontal scroll bar, 1 page" label="Horizontal scroll bar, 1 page" enabled="true" visible="false" x="0" y="685" width="375" height="30" index="2"/>
+                                                </XCUIElementTypeScrollView>
+                                            </XCUIElementTypeOther>
+                                        </XCUIElementTypeOther>
+                                    </XCUIElementTypeOther>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" name="Home WebView Login Forms Swipe" label="Home WebView Login Forms Swipe" enabled="true" visible="true" x="0" y="718" width="375" height="94" index="1">
+                                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="Home" label="Home" enabled="true" visible="true" x="0" y="728" width="75" height="50" index="0"/>
+                                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="WebView" label="WebView" enabled="true" visible="true" x="75" y="728" width="75" height="50" index="1"/>
+                                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="Login" label="Login" enabled="true" visible="true" x="150" y="728" width="75" height="50" index="2"/>
+                                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="Forms" label="Forms" enabled="true" visible="true" x="225" y="728" width="75" height="50" index="3"/>
+                                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="Swipe" label="Swipe" enabled="true" visible="true" x="300" y="728" width="75" height="50" index="4"/>
+                                </XCUIElementTypeOther>
+                            </XCUIElementTypeOther>
+                        </XCUIElementTypeOther>
+                    </XCUIElementTypeOther>
+                </XCUIElementTypeOther>
+            </XCUIElementTypeOther>
+        </XCUIElementTypeOther>
+    </XCUIElementTypeWindow>
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="false" x="0" y="0" width="375" height="812" index="1">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="0" width="375" height="812" index="0">
+            <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="0" width="375" height="812" index="0"/>
+        </XCUIElementTypeOther>
+    </XCUIElementTypeWindow>
+</XCUIElementTypeApplication></AppiumAUT>

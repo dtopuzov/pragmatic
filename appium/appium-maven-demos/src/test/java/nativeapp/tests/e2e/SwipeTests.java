@@ -1,4 +1,4 @@
-package nativeapp.tests;
+package nativeapp.tests.e2e;
 
 import base.MobileTest;
 import enums.Direction;

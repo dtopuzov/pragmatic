@@ -14,7 +14,7 @@ import settings.Settings;
  * Base test class for all mobile tests.
  */
 public class MobileTest {
-
+    protected static Settings settings;
     protected static AppiumDriver<?> driver;
 
     private static Client client;
@@ -22,7 +22,7 @@ public class MobileTest {
 
     @BeforeTest
     public static void beforeAll() {
-        Settings settings = new Settings();
+        settings = new Settings();
         server = new Server();
         server.start();
         client = new Client(settings);

@@ -114,5 +114,6 @@ public class LoginPage extends MobilePage {
         SoftAssert softAssertion = new SoftAssert();
         softAssertion.assertEquals(title, actualTitle);
         softAssertion.assertEquals(message, actualMessage);
+        softAssertion.assertAll();
     }
 }
