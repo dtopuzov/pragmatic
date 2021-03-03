@@ -63,7 +63,7 @@ jobs:
         api-level: 23
         profile: Nexus 5
         avd-name: Nexus5Api23
-        script: mvn -B clean test -Dtest="nativeapp.tests.*Tests" -Dconfig="nativeapp.emulator"
+        script: mvn -B clean test -Dtest="nativeapp.tests.*.*Tests" -Dconfig="nativeapp.emulator"
         working-directory: appium/appium-maven-demos
 
   sikuli-java-demos:
