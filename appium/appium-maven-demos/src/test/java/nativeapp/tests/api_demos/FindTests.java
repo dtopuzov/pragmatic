@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
  * https://appiumpro.com/editions/20-making-your-appium-tests-fast-and-reliable-part-2-finding-elements
  * https://appiumpro.com/editions/8-how-to-find-elements-in-ios-not-by-xpath
  */
-public class FindElements extends MobileTest {
+public class FindTests extends MobileTest {
     @BeforeMethod
     void beforeLoginTests() {
         HomePage homePage = new HomePage(driver);
