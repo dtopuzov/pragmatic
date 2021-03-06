@@ -6,11 +6,13 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.AutomationName;
+import io.appium.java_client.remote.IOSMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import settings.Settings;
+import utils.Network;
 
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -76,6 +78,12 @@ public class Client {
         // Set Android specific settings.
         if (settings.getPlatform() == Platform.ANDROID) {
             capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.ANDROID_UIAUTOMATOR2);
+
+            // We need to set different SYSTEM_PORT to
+            // enable two or more simultaneous Android test sessions.
+            // Reference: https://appium.io/docs/en/advanced-concepts/parallel-tests/
+            capabilities.setCapability(AndroidMobileCapabilityType.SYSTEM_PORT, Network.nextFreePort(5200, 5299));
+
             String avd = settings.getAvdName();
             if (avd != null) {
                 capabilities.setCapability(AndroidMobileCapabilityType.AVD, avd);
@@ -85,6 +93,11 @@ public class Client {
         // Set iOS specific settings.
         if (settings.getPlatform() == Platform.IOS) {
             capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
+
+            // We need to set different WDA_LOCAL_PORT to
+            // enable two or more simultaneous iOS test sessions.
+            // Reference: https://appium.io/docs/en/advanced-concepts/parallel-tests/
+            capabilities.setCapability(IOSMobileCapabilityType.WDA_LOCAL_PORT, Network.nextFreePort(8100, 8199));
         }
 
         // Set device id.
@@ -105,6 +118,11 @@ public class Client {
             WebDriverManager.chromedriver().driverVersion(chromeDriverVersion).setup();
             String path = WebDriverManager.chromedriver().driverVersion(chromeDriverVersion).getDownloadedDriverPath();
             capabilities.setCapability(AndroidMobileCapabilityType.CHROMEDRIVER_EXECUTABLE, path);
+
+            // We need to set different CHROMEDRIVER_PORT to
+            // enable two or more simultaneous WebView sessions.
+            // Reference: https://appium.io/docs/en/advanced-concepts/parallel-tests/
+            capabilities.setCapability(AndroidMobileCapabilityType.CHROMEDRIVER_PORT, Network.nextFreePort(58500, 58599));
         }
 
         return capabilities;
