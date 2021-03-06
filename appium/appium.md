@@ -24,9 +24,10 @@ For specific technologies and demos please read `README.md` of each demo.
 
 - [Remote Debugging Android Devices](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3)
 
-**ChromeDriver Versions Table**
+**Control WebViews and Chrome Web Browser with ChromeDriver**
 
-- [ChromeDriver Versions Table](http://appium.io/docs/en/writing-running-appium/web/chromedriver/)
+- [Use ChromeDriver with Appium](http://appium.io/docs/en/writing-running-appium/web/chromedriver/)
+- [Chrome/ChromeDriver Version Mapping](https://raw.githubusercontent.com/appium/appium-chromedriver/master/config/mapping.json)
 
 **Solve the issue with download and setup ChromeDriver**
 
