@@ -23,7 +23,7 @@ public class MobileTest {
     @BeforeTest
     public static void beforeAll() {
         settings = new Settings();
-        server = new Server();
+        server = new Server(settings);
         server.start();
         client = new Client(settings);
         client.start(server.getUrl());

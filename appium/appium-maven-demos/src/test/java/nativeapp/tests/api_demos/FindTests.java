@@ -5,9 +5,9 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import nativeapp.enums.FooterItem;
 import nativeapp.pages.HomePage;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

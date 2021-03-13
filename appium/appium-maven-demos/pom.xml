@@ -23,28 +23,12 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.3.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>22.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.api-client</groupId>
-            <artifactId>google-api-client-appengine</artifactId>
-            <version>1.23.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.google.guava</groupId>
-                    <artifactId>guava-jdk5</artifactId>
-                </exclusion>
-            </exclusions>
+            <version>7.4.0</version>
         </dependency>
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>7.4.1</version>
+            <version>7.5.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.bonigarcia</groupId>

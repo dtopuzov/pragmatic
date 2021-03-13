@@ -50,6 +50,7 @@ public abstract class MobilePage {
         String webContext = this.getWebContext(driver);
         if (webContext != null) {
             driver.context(webContext);
+            await().atMost(30, SECONDS).until(() -> driver.getPageSource().contains("html"));
         } else {
             throw new RuntimeException("Failed to switch to WebView context.");
         }
