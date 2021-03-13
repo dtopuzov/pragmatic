@@ -7,5 +7,5 @@
 ##############################################################
 
 java -jar morsecodetranslator.jar &
-java -jar $SIKULI_HOME/sikulix.jar -r sikuli-ide-demo-mac.sikuli
+java -jar $SIKULI_HOME/sikulixide-2.0.5.jar -r sikuli-ide-demo-mac.sikuli
 pkill java
