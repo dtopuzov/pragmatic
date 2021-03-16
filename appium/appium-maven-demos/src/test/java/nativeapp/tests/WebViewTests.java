@@ -1,4 +1,4 @@
-package nativeapp.tests.e2e;
+package nativeapp.tests;
 
 import base.MobileTest;
 import nativeapp.enums.FooterItem;
