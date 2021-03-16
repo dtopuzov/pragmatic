@@ -83,7 +83,7 @@ jobs:
         profile: Pixel
         avd-name: PixelApi27
         script: mvn -B clean test -Dtest="*.*Tests"
-        working-directory: appium/appium-maven-demos
+        working-directory: appium/appium-api-demos
 
   sikuli-java-demos:
     runs-on: windows-latest
