@@ -75,11 +75,9 @@ public class iOSCapabilitiesTests {
 
         driver = new IOSDriver<IOSElement>(service.getUrl(), capabilities);
 
-        driver.navigate().to("https://www.pragmatic.bg");
-
-        By locator = By.id("dt-menu-toggle");
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-        Assert.assertEquals(element.getText(), "MENU");
+        driver.navigate().to("https://github.com/dtopuzov");
+        By locator = By.xpath("//*[text()='Dimitar Topuzov']");
+        WebElement title = driver.findElement(locator);
+        Assert.assertTrue(title.isDisplayed());
     }
 }
