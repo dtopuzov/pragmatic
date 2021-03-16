@@ -80,7 +80,7 @@ jobs:
       uses: reactivecircus/android-emulator-runner@v2
       with:
         api-level: 27
-        profile: Pixel
+        profile: pixel
         avd-name: PixelApi27
         script: mvn -B clean test -Dtest="*.*Tests"
         working-directory: appium/appium-api-demos
