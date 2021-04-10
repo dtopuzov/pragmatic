@@ -1,4 +1,4 @@
-package screens;
+package wdio.screens;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;

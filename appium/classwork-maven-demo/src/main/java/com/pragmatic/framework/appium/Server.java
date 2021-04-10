@@ -1,14 +1,14 @@
-package appium;
+package com.pragmatic.framework.appium;
 
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
-import settings.Settings;
+import com.pragmatic.framework.settings.Settings;
 
 import java.net.URL;
 
 /**
- * Appium server utils.
+ * Appium server com.pragmatic.framework.utils.
  */
 public class Server {
     private final Settings settings;

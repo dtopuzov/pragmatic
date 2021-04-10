@@ -1,5 +1,7 @@
-package appium;
+package com.pragmatic.framework.appium;
 
+import com.pragmatic.framework.settings.Settings;
+import com.pragmatic.framework.utils.Network;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -11,8 +13,6 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import settings.Settings;
-import utils.Network;
 
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -31,9 +31,9 @@ public class Client {
 
     public void start(URL url) {
         if (settings.getPlatform() == Platform.IOS) {
-            driver = new IOSDriver<MobileElement>(url, getCapabilities());
+            driver = new IOSDriver<>(url, getCapabilities());
         } else if (settings.getPlatform() == Platform.ANDROID) {
-            driver = new AndroidDriver<MobileElement>(url, getCapabilities());
+            driver = new AndroidDriver<>(url, getCapabilities());
         } else {
             driver = new AppiumDriver<>(url, getCapabilities());
         }
@@ -78,7 +78,7 @@ public class Client {
             capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 120);
         }
 
-        // Set Android specific settings.
+        // Set Android specific com.pragmatic.framework.settings.
         if (settings.getPlatform() == Platform.ANDROID) {
             capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.ANDROID_UIAUTOMATOR2);
 
@@ -87,13 +87,18 @@ public class Client {
             // Reference: https://appium.io/docs/en/advanced-concepts/parallel-tests/
             capabilities.setCapability(AndroidMobileCapabilityType.SYSTEM_PORT, Network.nextFreePort(5200, 5299));
 
-            String avd = settings.getAvdName();
-            if (avd != null) {
-                capabilities.setCapability(AndroidMobileCapabilityType.AVD, avd);
+            String avdName = settings.getAvdName();
+            if (avdName != null) {
+                capabilities.setCapability(AndroidMobileCapabilityType.AVD, avdName);
+            }
+
+            String avdArgs = settings.getAvdArgs();
+            if (avdArgs != null) {
+                capabilities.setCapability(AndroidMobileCapabilityType.AVD_ARGS, avdArgs);
             }
         }
 
-        // Set iOS specific settings.
+        // Set iOS specific com.pragmatic.framework.settings.
         if (settings.getPlatform() == Platform.IOS) {
             capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
 

@@ -1,4 +1,4 @@
-package utils;
+package com.pragmatic.framework.utils;
 
 import java.io.IOException;
 import java.net.ServerSocket;

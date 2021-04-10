@@ -1,9 +1,9 @@
-package wdio;
+package wdio.tests;
 
-import base.MobileTest;
+import com.pragmatic.framework.base.MobileTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import screens.LoginScreen;
+import wdio.screens.LoginScreen;
 
 public class LoginTests extends MobileTest {
     private LoginScreen loginScreen;

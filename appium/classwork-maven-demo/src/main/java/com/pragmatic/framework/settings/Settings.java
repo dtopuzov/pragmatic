@@ -1,4 +1,4 @@
-package settings;
+package com.pragmatic.framework.settings;
 
 import org.openqa.selenium.Platform;
 
@@ -47,6 +47,10 @@ public class Settings {
 
     public String getAvdName() {
         return properties.getProperty("avdName");
+    }
+
+    public String getAvdArgs() {
+        return properties.getProperty("avdArgs");
     }
 
     public String getAppPath() {

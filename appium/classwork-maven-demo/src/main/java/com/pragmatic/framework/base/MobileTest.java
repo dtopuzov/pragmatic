@@ -1,19 +1,19 @@
-package base;
+package com.pragmatic.framework.base;
 
-import appium.Client;
-import appium.Server;
+import com.pragmatic.framework.appium.Client;
+import com.pragmatic.framework.appium.Server;
+import com.pragmatic.framework.settings.Settings;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import settings.Settings;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 public class MobileTest {
-    private Server server;
-    private Client client;
-    protected AppiumDriver<MobileElement> driver;
+    private static Server server;
+    private static Client client;
+    protected static AppiumDriver<MobileElement> driver;
 
-    @BeforeClass
+    @BeforeTest(alwaysRun = true)
     public void beforeSuite() {
         Settings settings = new Settings();
         server = new Server(settings);
@@ -24,7 +24,7 @@ public class MobileTest {
         driver = client.getDriver();
     }
 
-    @AfterClass()
+    @AfterTest(alwaysRun = true)
     public void afterSuite() {
         client.stop();
         server.stop();
