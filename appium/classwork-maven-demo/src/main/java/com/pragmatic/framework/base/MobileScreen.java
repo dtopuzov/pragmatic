@@ -10,7 +10,13 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
 @SuppressWarnings("rawtypes")
@@ -89,5 +95,14 @@ public class MobileScreen {
                 .waitAction(WaitOptions.waitOptions(Duration.ofMillis(duration)))
                 .moveTo(PointOption.point(xEnd, yEnd))
                 .release().perform();
+    }
+
+    public BufferedImage getScreenshot() {
+        try {
+            File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            return ImageIO.read(screenshot);
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to take screenshot.", e);
+        }
     }
 }
