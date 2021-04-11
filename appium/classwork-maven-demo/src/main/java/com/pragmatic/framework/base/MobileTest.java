@@ -7,6 +7,7 @@ import com.pragmatic.framework.utils.FileSystem;
 import com.pragmatic.framework.utils.Image;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.qameta.allure.Allure;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestResult;
@@ -60,16 +61,16 @@ public class MobileTest {
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             BufferedImage image = ImageIO.read(screenshot);
             Image.save(image, screenshotsFolder + File.separator + testName + ".png");
-        } catch (IOException e) {
-            throw new RuntimeException("Failed to take screenshot of mobile app.", e);
+            Allure.addAttachment("Screenshot on test fail", "image/png",
+                    Image.bufferedImageToInputStream(image), ".png");
+        } catch (IOException ignored) {
         }
 
         // Get page source
         try {
             String pageSource = driver.getPageSource();
             FileSystem.writeStringToFile(pageSource, logsFolder + File.separator + testName + ".xml");
-        } catch (IOException e) {
-            throw new RuntimeException("Failed to take page source of mobile app.", e);
+        } catch (IOException ignored) {
         }
     }
 }

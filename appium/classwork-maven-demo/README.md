@@ -18,6 +18,7 @@ Non Goals:
 - [TestNG](https://testng.org/doc/) as unit testing framework
 - [Appium](http://appium.io/) to drive mobile devices/emulators/simulators
 - [webdrivermanager](https://github.com/bonigarcia/webdrivermanager) to download appropriate browser drivers
+- [Allure](https://docs.qameta.io/allure/#_testng) to generate nice HTML reports
 
 ## Execute Tests
 
