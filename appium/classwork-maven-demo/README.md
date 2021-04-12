@@ -12,8 +12,6 @@ Non Goals:
 
 ## Technology Stack
 
-## Technology Stack
-
 - [Maven](https://maven.apache.org/) to build the project and manage dependencies
 - [TestNG](https://testng.org/doc/) as unit testing framework
 - [Appium](http://appium.io/) to drive mobile devices/emulators/simulators
