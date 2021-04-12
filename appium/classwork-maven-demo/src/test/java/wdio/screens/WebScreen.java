@@ -4,6 +4,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -21,6 +22,7 @@ public class WebScreen {
         this.driver = driver;
     }
 
+    @Step("Go to WebView tab")
     public void navigateTo() {
         driver.findElement(MobileBy.AccessibilityId("WebView")).click();
         Set<String> contextNames = driver.getContextHandles();
@@ -36,6 +38,7 @@ public class WebScreen {
         driver.context("NATIVE_APP");
     }
 
+    @Step("Search for '{text}'")
     public void search(String text) {
         By searchButtonLocator = By.cssSelector(".DocSearch-Button");
         wait.until(ExpectedConditions.presenceOfElementLocated(searchButtonLocator)).click();
@@ -46,6 +49,7 @@ public class WebScreen {
         input.sendKeys(text + Keys.ENTER);
     }
 
+    @Step("Verify result contains '{text}' text")
     public void verifyResultExist(String text) {
         By locator = By.xpath("//span[@class='DocSearch-Hit-title' and .='" + text + "']");
         WebElement result = wait.until(ExpectedConditions.presenceOfElementLocated(locator));

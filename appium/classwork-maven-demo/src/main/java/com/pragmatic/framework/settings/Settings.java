@@ -1,5 +1,6 @@
 package com.pragmatic.framework.settings;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.Platform;
 
 import java.io.File;

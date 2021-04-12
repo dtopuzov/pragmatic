@@ -30,6 +30,19 @@ public class Image {
     }
 
     /**
+     * Convert BufferedImage to InputStream.
+     *
+     * @param image as BufferedImage.
+     * @return InputStream
+     * @throws IOException when fail to read image.
+     */
+    public static InputStream bufferedImageToInputStream(BufferedImage image) throws IOException {
+        ByteArrayOutputStream os = new ByteArrayOutputStream();
+        ImageIO.write(image, "png", os);
+        return new ByteArrayInputStream(os.toByteArray());
+    }
+
+    /**
      * Compare two images.
      *
      * @param actual   Actual image.
