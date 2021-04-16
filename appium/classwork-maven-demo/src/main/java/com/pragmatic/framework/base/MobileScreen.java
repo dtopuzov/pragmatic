@@ -5,6 +5,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.remote.AutomationName;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
@@ -13,6 +14,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import javax.imageio.ImageIO;
@@ -27,6 +29,7 @@ public class MobileScreen {
 
     public MobileScreen(AppiumDriver<MobileElement> driver) {
         this.driver = driver;
+        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
     public MobileElement findByText(String text) {
@@ -53,7 +56,7 @@ public class MobileScreen {
         } else {
             throw new RuntimeException("Unsupported automation technology: " + automation);
         }
-        return (MobileElement) driver.findElement(locator);
+        return driver.findElement(locator);
     }
 
     @Step("Verify '{text}' text is visible")

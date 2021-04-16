@@ -15,6 +15,7 @@ public class SmokeTest extends MobileTest {
         fileCommander.allowPermissions();
 
         // Open side drawer
+        System.out.println(driver.getPageSource());
         driver.findElement(MobileBy.AccessibilityId("Navigate up")).click();
 
         // Verify it is free edition
