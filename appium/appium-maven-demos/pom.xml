@@ -50,7 +50,7 @@
                 <configuration>
                     <argLine>-Xmx1024m -Dsun.zip.disableMemoryMapping=true</argLine>
                     <redirectTestOutputToFile>true</redirectTestOutputToFile>
-                    <testFailureIgnore>true</testFailureIgnore>
+                    <testFailureIgnore>false</testFailureIgnore>
                 </configuration>
             </plugin>
             <plugin>
