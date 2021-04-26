@@ -17,7 +17,7 @@ public class LoginTests extends MobileTest {
 
     @Test
     public void testLogin() {
-        loginScreen.login("dtopuzov@gmail.com", "12345678");
+        loginScreen.login("dtocom", "12345678");
         loginScreen.verifySuccessfulLogin();
     }
 
